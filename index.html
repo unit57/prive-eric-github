@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- materialize -->
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+
+</head>
+<body>
+	<div class="nav">nav
+	<br>
+	<br>
+	<br></div>
+	<div class="header"></div>
+		<!-- Sub Headers -->
+		<div id="subheaderParentDivId" class="subheaderParentDiv">
+			<div id="subheader1" class="subheader">
+				<!-- Blank -->
+				<div class="short"></div>
+				<!-- tell us more -->
+				<div id="tellUsMore" class="progressComponent">
+					<p>Tell us a little bit more about your upcoming event in 3 easy steps taking less than  10 minutes. Someone from our Concierge Team will send you vetted options that best align with your criteria. </p>
+				</div>
+				<!-- 1,2,3 circles Subheader 1 -->
+				<div class="progressComponent bottomMargin">
+					<div id="circle1_1" class="circle"><p>1</p></div>
+						<div class="line"></div>
+					<div id="circle1_2" class="circle"><p>2</p></div>
+						<div class="line"></div>
+					<div id="circle1_3" class="circle"><p>3</p></div>
+				</div>
+				<!-- Let's get Started -->
+				<div class="progressComponent instructions">
+					<p>Let’s get started! First a couple things about you.</p>
+				</div>
+			</div>
+
+			<div id="subheader2" class="subheader">
+				<!-- Blank -->
+				<div class="progressComponent"></div>
+				<div class="progressComponent">
+					
+					<!-- 1,2,3 circles Subheader 2 -->
+					<div class="progressComponent bottomMargin">
+						<div id="circle2_1" class="circle"><p>1</p></div>
+							<div class="line"></div>
+						<div id="circle2_2" class="circle"><p>2</p></div>
+							<div class="line"></div>
+						<div id="circle2_3" class="circle"><p>3</p></div>
+					</div>
+				</div>
+				<div class="progressComponent instructions">
+					<p> Knowing specific criteria about your event is key.</p>
+				</div>
+			</div>
+
+			<div id="subheader3" class="subheader">
+				<!-- Blank -->
+				<div class="progressComponent"></div>
+				<!-- container for circles  -->
+				<div class="progressComponent">
+					<!-- 1,2,3 circles Subheader 3 -->
+					<div class="progressComponent bottomMargin">
+						<div id="circle3_1" class="circle"><p>1</p></div>
+							<div class="line"></div>
+						<div id="circle3_2" class="circle"><p>2</p></div>
+							<div class="line"></div>
+						<div id="circle3_3" class="circle"><p>3</p></div>
+					</div>
+				</div>
+				<div class="progressComponent instructions">
+					<p>The more details we know the better options we can provide.</p>
+				</div>
+			</div>
+		</div>	
+
+		<div class="formDiv">
+			<form id="inquiryForm" method="post" action="#">
+				<div class="formPage" id="formPage1">
+					<div class="innerFormPage">
+						<!-- blank -->
+						<div class="parentFormComponent short"></div>
+						<!-- name -->
+						<div class="input-field parentFormComponent">
+							<div class="fiftyPercent">
+								
+								<p class=" inputTitle " >First Name</p>
+								<input class="formInput " type="text" name="fName" id="fName" placeholder="Enter Your First Name">
+							</div>
+							<div class="fiftyPercent">
+								<p  class="inputTitle">Last Name</p>
+								<input class="formInput" type="text" name="lName" id="lName" placeholder="Enter Your Last Name">
+							</div>
+						</div>
+						<!-- if corporte event -->
+						<div class="input-field  parentFormComponent">
+							<div class="fullLength">
+								<p class="inputTitle" >If corporate event, company name</p>
+								<input class="formInput" type="text" name="company" id="company" placeholder="Enter Name of Company Hosting Event">	
+							</div>
+								
+							
+						</div>
+						<!-- size / sector / title -->
+						<div class="input-field parentFormComponent">
+							<div class="thirdsDiv">
+								<p class="inputTitle">Size of Company</p>
+								<select class="formOption" name="companySize" id="companyOption" onchange="this.className=this.options[this.selectedIndex].className"
+    								class="blackText">
+									<option disabled selected="selected" value="1">Select Company Size</option>
+									<option value="1">25 or less </option>
+									<option value="2">50</option>
+									<option value="3">100</option>
+									<option value="4">200</option>	
+									<option value="5">300</option>	
+									<option value="6">500+</option>	
+								</select>
+							</div>
+							<div class="thirdsDiv">
+								<p class="inputTitle">Company Sector</p>
+								<select class="formOption" name="companySector" id="sectorOption">
+									<option disabled selected="selected" value="1">Select Sector</option>
+									<option value="1">Accounting</option>
+									<option value="2">Advertising</option>
+									<option value="3">Auto</option>
+									<option value="4">Banking</option>	
+									<option value="4">Communications</option>	
+									<option value="4">Construction</option>	
+									<option value="4">Consulting</option>	
+									<option value="4">Education</option>	
+									<option value="4">Energy</option>	
+									<option value="4">Financial Services</option>	
+									<option value="4">Food and Beverage</option>	
+									<option value="4">Health</option>	
+									<option value="4">Legal Services</option>	
+									<option value="4">Media</option>	
+									<option value="4">Music</option>	
+									<option value="4">Public Administration</option>	
+									<option value="4">Technology</option>	
+									<option value="4">Travel</option>	
+									<!-- <option value="4"></option>	
+									<option value="4"></option>	
+									<option value="4"></option>	
+									<option value="4"></option>	 -->
+								</select>
+							</div>
+							<div class="thirdsDiv">
+								<p class="inputTitle">Title</p>
+								<input class="formInput" type="text" name="title" id="title" placeholder="Enter Your Title">	
+							</div>
+						</div>
+						<!-- email / email type -->
+						<div class="input-field  parentFormComponent">
+							<div class="sixtyPercent">
+								<p class="inputTitle">E-mail</p>
+								<input class="formInput" type="text" name="email" id="email" placeholder="Enter Email">	
+							</div>
+							<div class="fourtyPercent">
+								<p class="inputTitle">E-mail Type</p>
+								<select class="formOption" name="emailType" id="emailType">
+									<option value="1">Work</option>
+									<option value="2">Personal</option>
+								</select>
+								
+							</div>	
+						</div>
+						<!-- phone / phone type -->
+						<div class="input-field parentFormComponent">
+							<div class="sixtyPercent">
+								<p class="inputTitle">Phone Number</p>
+								<input class="formInput" type="number" name="phoneNumber" id="phoneNumber" placeholder="eg. 555-555-5555">	
+							</div>
+							<div class="fourtyPercent">
+								<p class="inputTitle">Phone Type</p>
+								<select class="formOption" name="phoneType" id="phoneType">
+									<option value="1">Cell</option>
+									<option value="2">Home</option>
+									<option value="3">Office</option>
+								</select>
+								
+							</div>	
+						</div>
+						<!-- check here if you work at company -->
+						<div class="parentFormComponent short">
+							<div class="fullLength">
+								<span> 
+									<input 
+										class="filled-in checkbox-gold"
+										type="checkbox" 
+										name="employee" 
+										value="isEmployee" 
+										id="employee">
+										<label for="employee">Check here if you work at the company hosting the event </label> 
+								</span>
+							</div>
+						</div>
+						<!-- blank -->
+						<div class="parentFormComponent"></div>
+
+
+					</div>
+
+				</div>
+				
+				<!-- Second Form Page -->
+				<div class="formPage" id="formPage2">
+					<div class="innerFormPage">
+						<!-- Blank -->
+						<div class="parentFormComponent"></div>
+						<!-- Event Name -->
+						<div class="input-field parentFormComponent">
+							<div class="fullLength">
+								<p class="inputTitle">Event Name</p>
+								<input class="formInput" type="text" name="eventName" id="eventName" placeholder="Enter event name e.g. Susan's 40th Birthday, Chase Investor Breakfast etc. ">
+							</div>
+						</div>
+						<!-- Event Date / Perferred Neighborhood -->
+						<div class="input-field parentFormComponent tall">
+							<div class="fiftyPercent">
+								<p class="inputTitle">Event Date</p>
+								<input class="formInput" placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date">
+								<!-- <p> + Alternate Date </p> -->
+							</div>
+
+							<div class="fiftyPercent">
+							<p class="inputTitle">Perferred Neighborhood</p>
+							 <select class="formOption" name="neighborhood" id="neighborhood">
+									<option disabled selected="selected" value="">Select Neighborhood</option>
+									<option value="1">Harlem </option>
+									<option value="1">Upper East Side</option>
+									<option value="1">Upper West Side</option>
+									<option value="1">Midtown </option>
+									<option value="1">Columbus Circle</option>
+									<option value="1">Rockefeller Center</option>
+									<option value="1">Theater District</option>
+									<option value="1">Turtle Bay</option>
+									<option value="1">Midtown </option>
+									<option value="1">Midtown East</option>
+									<option value="1">Times Squre</option>
+									<option value="1">Hudson Yards</option>
+									<option value="1">Hells Kitchen</option>
+									<option value="1">Herald Square</option>
+									<option value="1">Murry Hill</option>
+									<option value="1">Madison Square</option>
+									<option value="1">Chelsea</option>
+									<option value="1">Flatiron District</option>
+									<option value="1">Gramercy Park</option>
+									<option value="1">Meatpacking District</option>
+									<option value="1">AlphabetCity</option>
+									<option value="1">Greenwich Village</option>
+									<option value="1">West Village</option>
+									<option value="1">Lower East Side</option>
+									<option value="1">SoHo</option>
+									<option value="1">NoLita</option>
+									<option value="1">Little Italy</option> 
+									<option value="1">Chinatown </option>
+									<option value="1">Financial District</option> 
+									<option value="1">TriBeCa</option></option>
+									<option value="1">South Street Seaport</option>
+									<option value="1">Battery Park City</option>
+									<option value="1">Not Listed</option>
+								</select>
+								<!-- <p> + Alternate Neighborhood</p> -->
+							 </div>
+						</div>
+						<!-- Expected Number of Guests  -->
+						<div class="input-field parentFormComponent">
+							<div class="fiftyPercent"> 
+								<p class="inputTitle">Expected No. of Guests</p>
+								<input id="expectedGuestMinInput" class="formInput sixtyPercentInput" placeholder="Min. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="minGuest"> 
+								<button id="expectedGuestMinMinus" type="button">-</button>
+								<button id="expectedGuestMinPlus" type="button">+</button>
+							</div>
+							<div class="fiftyPercent"> 
+								<p> &nbsp</p>
+								<input id="expectedGuestMaxInput"class="formInput sixtyPercentInput" placeholder="Max. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="maxGuest"> 
+								<button id="expectedGuestMaxMinus" type="button">-</button>
+								<button id="expectedGuestMaxPlus" type="button">+</button>
+							 </div>
+						</div>
+						
+
+
+
+						<!-- Start Time -->
+						<div  class="parentFormComponent short">
+							<div id="startTimeLabelDiv" class="fiftyPercent">
+							<p class="inputTitle">Estimated Start Time </p>
+								
+							</div>
+							<div id="durationLabelDiv"class="fiftyPercent">
+								<p class="inputTitle">Duration</p>
+							</div>
+						</div>	
+
+						<div class="input-field parentFormComponent">
+							<div id="timeDiv" class="input-field fullLength"> 
+								
+								<!-- <p class="inputTitle">Estimated Start Time </p> -->
+								<!-- Hours -->
+								
+								<div id="hoursDiv">
+
+								 	<select class=" " name="hours" id="hours">
+										<option disabled selected="selected" value=""> Hour </option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select> 
+								</div>
+								<!-- Minutes -->
+								<div id="minutesDiv">
+									<select class=" " name="minutes" id="minutes">
+										<option disabled selected="selected" value="">Minutes</option>
+										<option value="1">00</option>
+										<option value="2">30</option>
+									</select> 
+								</div>
+								<!-- AM / PM --> 
+								<div id="amPMDiv">
+									<select class=" " name="amPM" id="amPM">
+										<option selected="selected" value="AM"> AM </option>
+										<option value="PM"> PM </option>	
+									</select>
+								</div>
+								<!-- DURATION -->
+								<div id="durationDiv"> 
+									<!-- <p class="inputTitle">Duration</p> -->
+								<div id="durationInput">
+									<input class="formInput sixtyPercentInput" placeholder="duration" class="textbox-n" type="text" onfocus="(this.type='number')"  id="duration"> 
+								</div>
+								
+								<!-- <div id="durationButtonDiv">
+									<button type="button">-</button>
+									<button type="button">+</button>
+								</div> -->
+								</div>
+
+							</div>
+						</div>
+
+
+		
+						
+
+
+						<!-- Flexability -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent"> 
+							<p class="inputTitle">Start Time Flexability </p>
+							<br>
+									<input
+										class="with-gap" 
+										type="radio" 
+										name="time-flexability" 
+										value="yes"
+										id="time-flexability-yes">
+										<label for="time-flexability-yes">YES</label>
+									</input> 
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="time-flexability" 
+										value="no"
+										id="time-flexability-no"
+										checked="checked">
+										<label for="time-flexability-no">NO</label>
+									</input> 
+								
+							
+							</div>
+							<div class="fiftyPercent"> 
+							<p class="inputTitle">Date Flexability </p>
+							<br>
+									<input
+										class="with-gap" 
+										type="radio" 
+										name="date-flexability" 
+										value="yes"
+										id="date-flexability-yes">
+										<label for="date-flexability-yes">YES</label>
+									</input> 
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="date-flexability" 
+										value="no"
+										id="date-flexability-no"
+										checked="checked">
+										<label for="date-flexability-no">NO</label>
+									</input> 
+							 </div>
+						</div>
+						<!-- Budget -->
+						<div class="input-field parentFormComponent medium">
+							<div class="fullLength">
+								<p class="inputTitle">Event Budget</p>
+								<span> Tell us about your budget for this event either per person or for the whole event.</span>
+								</div>
+						</div>
+						<!-- Per Guest -->
+						<div class="input-field parentFormComponent short">
+							<div id="perGuestDiv" class="fourtyPercent">
+								
+
+									<input  
+											class="with-gap"
+											type="radio" 
+											name="budget" 
+											value="perGuest" 
+											checked 
+											id="perGuest">
+										<label for="perGuest"> Per Guest </label>  
+							</div>
+							<div class="sixtyPercent short">
+								<select class="formOption " name="priceRange" id="priceRange">
+									<option disabled selected="selected" value="">Select Price Range Per Guest </option>
+									<option value="50">50.00</option>
+									<option value="75">75.00</option>
+									<option value="100">100.00</option>
+									<option value="150">150.00</option>
+									<option value="200">200.00</option>
+									<option value="300">300.00 +</option>
+								</select>
+							</div>
+						</div>
+						<!-- Total -->
+						<div class="input-field parentFormComponent short">
+							<div id="totalBudgetDiv" class="fourtyPercent">
+								
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="budget" 
+										value="totalBudget"
+										id="totalBudget">
+										<label for="totalBudget"> Total Budget </label> 
+							</div>
+							
+							<div class="sixtyPercent">
+									<input 
+										class="formInput" 
+										type="text" 
+										name="totalBudgetValue" 
+										id="totalBudgetValue" 
+										placeholder="e.g. $5000">
+							</div>
+						</div>
+						<div class="input-field parentFormComponent short"></div>
+						<!-- Event Payment -->
+						<div class="input-field parentFormComponent medium">
+							<div class="fullLength">
+								<p class="inputTitle">Event Payment</p>
+								<span>How would you like additional charges on the day of be paid for?</span>
+							</div>
+						</div>
+						<div class="input-field parentFormComponent">
+							<div class="fullLength">
+								<p>
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="dayOfCharges" 
+										value="singlePayment" 
+										checked
+										id="openBar">
+										<label for="openBar"> Single event host will foot entire bill on credit card </label>
+								</p>
+								<p>
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="dayOfCharges" 
+										value="splitPayment"
+										id="splitPayment">
+										<label for="splitPayment"> Split the bill between multiple event host on more than one credit card</label>
+								</p>
+								
+							</div>
+						</div>
+						<div class="parentFormComponent"></div>
+					</div>
+
+				</div>
+				<!-- Third Form Page -->
+				<div class="formPage" id="formPage3">
+					<div class="innerFormPage">
+						<!-- Blank -->
+					<!-- 	<div class="parentFormComponent">
+							
+						</div> -->
+						<!-- Occasion / Event -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+							<p class="inputTitle">Occasion</p>	
+							<select class="formOption" name="occasion" id="occasion">
+									<option disabled selected="selected" value="">Select Occasion </option>
+									<option value="1">occasion a </option>
+									<option value="2">occasion b </option>
+									<option value="3">occasion c </option>
+								</select>
+								</div>
+							<div class="fiftyPercent">
+							<p class="inputTitle">Event</p>	
+							<select class="formOption" name="event" id="event">
+									<option disabled selected="selected" value="">Select Event </option>
+									<option value="1">event a </option>
+									<option value="2">event b </option>
+									<option value="3">event c </option>
+								</select>
+							</div>
+						</div>
+						<!-- Privacy / Cuisine -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+							<p class="inputTitle">Privacy Level</p>	
+							<select class="formOption" name="privacy" id="privacy">
+									<option disabled selected="selected" value="">Select Privacy </option>
+									<option value="1">Privacy a </option>
+									<option value="2">Privacy b </option>
+									<option value="3">Privacy c </option>
+								</select>
+							</div>
+							<div class="fiftyPercent">
+							<p class="inputTitle">Cuisine</p>	
+							<select class="formOption" name="cuisine" id="cuisine">
+									<option disabled selected="selected" value="">Select Cuisine </option>
+										<option value="3">American</option>
+										<option value="3">Argentinian</option>
+										<option value="3">Asian</option>
+										<option value="3">BBQ</option>
+										<option value="3">Bagels</option>
+										<option value="3">Belgian</option>
+										<option value="3">Brazilian</option>
+										<option value="3">Breakfast</option>
+										<option value="3">Burmese</option>
+										<option value="3">Cajun</option>
+										<option value="3">Californian</option>
+										<option value="3">Cantonese</option>
+										<option value="3">Caribbean</option>
+										<option value="3">Chinese</option>
+										<option value="3">Colombian</option>
+										<option value="3">Cuban</option>
+										<option value="3">Dessert</option>
+										<option value="3">Dominican</option>
+										<option value="3">Eclectic</option>
+										<option value="3">Ecuadorian</option>
+										<option value="3">El Salvadoran</option>
+										<option value="3">Ethiopian</option>
+										<option value="3">Filipino</option>
+										<option value="3">French</option>
+										<option value="3">German</option>
+										<option value="3">Greek</option>
+										<option value="3">Grill</option>
+										<option value="3">Haitian</option>
+										<option value="3">Halal</option>
+										<option value="3">Hamburgers</option>
+										<option value="3">Hawaiian</option>
+										<option value="3">Indian</option>
+										<option value="3">Indonesian</option>
+										<option value="3">Irish</option>
+										<option value="3">Italian</option>
+										<option value="3">Jamaican</option>
+										<option value="3">Japanese</option>
+										<option value="3">Korean</option>
+										<option value="3">Kosher</option>
+										<option value="3">Latin American</option>
+										<option value="3">Lebanese</option>
+										<option value="3">Malaysian</option>
+										<option value="3">Mandarin</option>
+										<option value="3">Mediterranean</option>
+										<option value="3">Mexican</option>
+										<option value="3">Middle Eastern</option>
+										<option value="3">Moroccan</option>
+										<option value="3">Nepalese</option>
+										<option value="3">New American</option>
+										<option value="3">Pakistani</option>
+										<option value="3">Pasta</option>
+										<option value="3">Persian</option>
+										<option value="3">Peruvian</option>
+										<option value="3">Polish</option>
+										<option value="3">Puerto Rican</option>
+										<option value="3">Russian</option>
+										<option value="3">Seafood</option>
+										<option value="3">Soul Food</option>
+										<option value="3">South American</option>
+										<option value="3">Southern</option>
+										<option value="3">Southwestern</option>
+										<option value="3">Spanish</option>
+										<option value="3">Steak</option>
+										<option value="3">Sushi</option>
+										<option value="3">Szechwan</option>
+										<option value="3">Taiwanese</option>
+										<option value="3">Tapas</option>
+										<option value="3">Tex-Mex</option>
+										<option value="3">Thai</option>
+										<option value="3">Tibetan</option>
+										<option value="3">Turkish</option>
+										<option value="3">Vegan</option>
+										<option value="3">Vegetarian</option>
+										<option value="3">Venezuelan</option>
+										<option value="3">Vietnamese</option>
+								</select>
+							</div>
+						</div>
+						<!-- Type of Bar -->
+						<div class="parentFormComponent">
+							<div class="fullLength typeOfBar">
+							<p>Type of Bar</p>
+							<div>
+								<div> 
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="barType" 
+										value="cashBar" 
+										checked ="checked"
+										id="cashBar">
+										<label for="cashBar">Cash Bar</label>
+
+								</div>
+								<div> 
+								<!-- Open Bar with a capital 'B' jumps page to top -->
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="barType" 
+										value="openbar"
+										id="openbar">
+										<label for="openbar">Open Bar</label>
+								</div>
+								<div> 
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="barType" 
+										value="both"
+										id="both">
+										<label for="both">Both</label>
+								</div>
+								<div> 	
+									<input 
+										class="with-gap"	
+										type="radio" 
+										name="barType" 
+										value="notApplicable"
+										id="notApplicable">
+										<label for="notApplicable">Not Applicable</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<!-- Amenities -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+							<p class="inputTitle">Amenities</p>
+							<p class="blackText">Select/Add all amenities you would absolutely need or like to have <button class="downArrow" id="amenitiesButton" type="button"> <span id="AmenitiesButtonText">See Amenities</span> </button></p>
+							</div>
+						</div>
+						<div id="amenities" class="amenitiesCollapse">
+						<!-- WiFi / Audio Video -->
+							<div class="parentFormComponent short">
+								<div class="fiftyPercent">
+									<p>
+										<span>
+											<input 
+												class="filled-in checkbox-gold"
+												type="checkbox" 
+												name="WiFi" 
+												value="WiFi"
+												id="WiFi">
+											<label for="WiFi">WiFi</label>
+										</span>
+									</p>
+								</div>
+								<div class="fiftyPercent">
+									<p> 
+										<span>
+											<input 
+												class="filled-in checkbox-gold"
+												type="checkbox" 
+												name="audioVisual" 
+												value="audioVisual"
+												id="audioVisual">
+											<label for="audioVisual">Audio Visual</label>
+										</span>
+									</p>
+								</div>
+							</div>
+							<!-- Coat Check / Restroom -->
+							<div class="parentFormComponent short">
+								<div class="fiftyPercent">
+									<p>
+										<span>
+											<input 
+												class="filled-in checkbox-gold"
+												type="checkbox" 
+												name="coatCheck" 
+												value="coatCheck"
+												id="coatCheck">
+											<label for="coatCheck">Private Coat Check</label>
+										</span>
+									</p>
+								</div>
+								<div class="fiftyPercent"> 
+									<p>
+										<span>
+											<input 
+												class="filled-in checkbox-gold"
+												type="checkbox" 
+												name="restroom" 
+												value="restroom"
+												id="restroom">
+											<label for="restroom">Restroom</label>
+										</span>
+									</p>
+								</div>
+							</div>
+							<!-- Sound Sysyem / Microphone -->
+							<div class="parentFormComponent short">
+								<div class="fiftyPercent">
+									<p>
+										<span>
+											<input 
+												class="filled-in checkbox-gold"
+												type="checkbox" 
+												name="soundSystem" 
+												value="soundSystem"
+												id="soundSystem">
+											<label for="soundSystem">Sound System</label>
+										</span>
+									</p>
+									+ Aditional Amenities
+								</div>
+								<div class="fiftyPercent">
+									<p>
+										<span>
+											<input 
+												class="filled-in checkbox-gold"
+												type="checkbox" 
+												name="microphone" 
+												value="microphone"
+												id="microphone">
+											<label for="microphone">Microphone</label>
+										</span>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Spceial Request -->
+						<div class="parentFormComponent tall">
+							<div class="input-field fullLength ">
+							<p class="inputTitle">Is there anything we should know? Any Special Request? </p>
+							<textarea 
+								rows='3'
+								placeholder="Enter any special requests or notes you would like us to keep in mind or make when recommending venues. Include food allergies or dietary restrictions." 
+								></textarea>
+							</div>
+						</div>
+						<!-- How did you hear about PriveTable -->
+						<div class="parentFormComponent">
+							<div class="fullLength input-field col s12">
+							<p class="inputTitle">How did you hear about PriveTable</p>	
+							<p><select class="formOption formOptionMedium select-dropdown" name="refferal" id="refferal">
+									<option disabled selected="selected" value=""> Select One </option>
+									<option value="1">Refereal a </option>
+									<option value="2">Refereal b </option>
+									<option value="3">Refereal c </option>
+								</select></p>
+								
+							</div>
+						</div>
+						<!-- blank -->
+						<div class="parentFormComponent"></div>
+								
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+	
+	<div class="buttonContainer">
+		<div id="previousButton"><p>PriveTable Home</p></div>
+		<div id="backButton"><p>Back</p></div>
+		<div id="nextButton"><p>Next</p></div>
+		<div id="submitButton"><p>Submit</p></div>
+	</div>
+
+
+
+
+
+
+
+		
+	<!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="./script.js"></script>	
+
+</body>
+</html>
